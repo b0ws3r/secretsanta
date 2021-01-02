@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /secretsanta
+
+mail:
+  mailsenderhost: ${mail_sender_host}
+  username: ${mail_username}
+  password: ${mail_password}
+  transportProtocol: ${mail_tp}
+  smtpAuth: true
+  tlsEnabled: true
+  debugEnabled: true

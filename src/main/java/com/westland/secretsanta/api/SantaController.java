@@ -20,10 +20,11 @@ public class SantaController {
 
     @PostMapping("/assignsantas")
     ResponseEntity<SantaResponse> assign(@RequestBody SantaRequest request) throws JsonProcessingException {
-
         this.service.assignSantas(request);
+
         SantaResponse response = new SantaResponse();
         ResponseEntity<SantaResponse> responseEntity = new ResponseEntity<SantaResponse>(response, HttpStatus.OK);
+
         return responseEntity;
     }
 

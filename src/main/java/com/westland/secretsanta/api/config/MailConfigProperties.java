@@ -11,8 +11,8 @@ public class MailConfigProperties {
     private String username;
     private String password;
     private String transportProtocol;
-    private boolean isSmtpAuth;
-    private boolean isTlsEnabled;
+    private boolean smtpAuth;
+    private boolean tlsEnabled;
     private boolean debugEnabled;
 
     public MailConfigProperties(){
@@ -52,19 +52,19 @@ public class MailConfigProperties {
     }
 
     public boolean isSmtpAuth() {
-        return isSmtpAuth;
+        return smtpAuth;
     }
 
     public void setSmtpAuth(boolean smtpAuth) {
-        isSmtpAuth = smtpAuth;
+        this.smtpAuth = smtpAuth;
     }
 
     public boolean isTlsEnabled() {
-        return isTlsEnabled;
+        return tlsEnabled;
     }
 
     public void setTlsEnabled(boolean tlsEnabled) {
-        isTlsEnabled = tlsEnabled;
+        this.tlsEnabled = tlsEnabled;
     }
 
     public boolean isDebugEnabled() {
