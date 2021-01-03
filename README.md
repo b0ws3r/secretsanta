@@ -15,8 +15,6 @@ There are two exceptions to this working:
 The second scenario can be handled if we make sure that in the case of an odd number of participants, that the participants are ordered in such a way that the last person to be matched is not matched to the first person in their group. 
 
 A -----> B<br/>
-      -<br/>
-     -<br/>
-    -<br/>
-   <- <br/>
-C  ----> D<br/>
+C <----- B<br/>
+C -----> D<br/>
+A <----- D<br/>
